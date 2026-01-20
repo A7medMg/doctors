@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 
 class AppRoutes {
   Route generateRoute(RouteSettings settings) {
+    // ignore: unused_local_variable
     final args = settings.arguments;
     switch (settings.name) {
       case Routes.onBoardingScreen:
