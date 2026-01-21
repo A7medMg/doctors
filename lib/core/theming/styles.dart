@@ -64,6 +64,11 @@ class TextStyles {
     fontWeight: FontWeightHelper.medium,
     color: ColorsManager.gray,
   );
+  static TextStyle font12BlackMedium = TextStyle(
+    fontSize: 12.sp,
+    fontWeight: FontWeightHelper.medium,
+    color: Colors.black,
+  );
 
   static TextStyle font12DarkBlueRegular = TextStyle(
     fontSize: 12.sp,

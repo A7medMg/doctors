@@ -5,6 +5,8 @@ import 'package:doctors/features/onboarding/widgets/logo_and_doc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+
+
 class OnboardingScreen extends StatelessWidget {
   const OnboardingScreen({super.key});
 
@@ -33,7 +35,8 @@ class OnboardingScreen extends StatelessWidget {
                         "Manage and schedule all of your medical appointments easily with Docdoc to get a new experience.",
                       style: TextStyles.font13GrayRegular,),
                       SizedBox(height: 30.h,),
-                    const GetStartedButton()
+                    const GetStartedButton(),
+
                     ],
                   ),
                 )
