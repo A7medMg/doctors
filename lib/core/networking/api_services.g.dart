@@ -32,7 +32,7 @@ class _ApiServices implements ApiServices {
       Options(method: 'POST', headers: _headers, extra: _extra)
           .compose(
             _dio.options,
-            'Auth/login',
+            'auth/login',
             queryParameters: queryParameters,
             data: _data,
           )
