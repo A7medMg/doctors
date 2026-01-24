@@ -1,3 +1,5 @@
+import 'package:doctors/core/helpers/extensions.dart';
+import 'package:doctors/core/routing/routes.dart';
 import 'package:doctors/features/login/ui/widgets/email_and_password.dart';
 import 'package:doctors/features/login/ui/widgets/login_bloc_listener.dart';
 import 'package:flutter/cupertino.dart';
@@ -56,7 +58,11 @@ class _LoginScreenState extends State<LoginScreen> {
                     verticalSpacing(16),
                    const TermsAndConditions(),
                     verticalSpacing(60),
-                    AlreadyHaveAnAccount(),
+                    GestureDetector(
+                        onTap: (){
+                          context.pushNamed(Routes.singUpScreen);
+                        },
+                        child: AlreadyHaveAnAccount()),
                     LoginBlocListener(),
 
 
