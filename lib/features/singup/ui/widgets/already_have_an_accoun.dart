@@ -2,18 +2,18 @@ import 'package:flutter/cupertino.dart';
 
 import '../../../../core/theming/styles.dart';
 
-class AlreadyHaveAnAccount extends StatelessWidget {
-  const AlreadyHaveAnAccount({super.key});
+class SigUpAlreadyHaveAnAccount extends StatelessWidget {
+  const SigUpAlreadyHaveAnAccount({super.key});
 
   @override
   Widget build(BuildContext context) {
     return  RichText(
       textAlign: TextAlign.center,
       text: TextSpan(
-        text: 'Don`t have an account yet? ',
+        text: 'Already have an account ? ',
         style: TextStyles.font12BlackMedium,
         children: <TextSpan>[
-          TextSpan(text: 'Sing Up', style: TextStyles.font13BlueSemiBold  ),
+          TextSpan(text: 'Login', style: TextStyles.font13BlueSemiBold  ),
 
 
         ],
