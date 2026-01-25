@@ -2,6 +2,7 @@
 import 'package:doctors/core/routing/app_routes.dart';
 import 'package:doctors/core/routing/routes.dart';
 import 'package:doctors/core/theming/colors.dart';
+import 'package:doctors/features/home/ui/home_Screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -22,8 +23,9 @@ class DocDoc extends StatelessWidget {
           primaryColor: ColorsManager.primaryColor,
           scaffoldBackgroundColor: Colors.white
         ),
-        onGenerateRoute: appRoutes.generateRoute,
-        initialRoute: Routes.onBoardingScreen,
+        home: HomeScreen(),
+       // onGenerateRoute: appRoutes.generateRoute,
+       // initialRoute: Routes.onBoardingScreen,
        
       );
     },

@@ -1,3 +1,10 @@
+
+import 'package:doctors/core/helpers/spacing_helper.dart';
+import 'package:doctors/features/home/ui/widgets/doctor_blue_box.dart';
+import 'package:doctors/features/home/ui/widgets/doctor_speciality_and_see_all.dart';
+import 'package:doctors/features/home/ui/widgets/doctor_speciality_list_view.dart';
+import 'package:doctors/features/home/ui/widgets/home_top_app_bar.dart';
+import 'package:doctors/features/home/ui/widgets/recomendation_doctors_list_view.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -5,9 +12,28 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
-        child: Text("Home Screennnnnnnnnnnnnnnnnnnnnnnnnnnnnn"),
+    return  Scaffold(
+      body: SafeArea(
+        child: Container(
+          width: double.infinity,
+          margin: EdgeInsets.fromLTRB(20, 16, 20, 28),
+          child: Column(
+            children: [
+             const  HomeTopAppBar(),
+              const DoctorBlueBox(),
+              verticalSpacing(24),
+              const DoctorSpecialityAndSeeAll(),
+              verticalSpacing(18),
+              const DoctorSpecialityListView(),
+              
+              verticalSpacing(8),
+              const RecommendationDoctorListView(),
+           
+        
+              
+              
+            ],
+          )),
       ),
     );
   }
