@@ -1,4 +1,4 @@
-import 'package:doctors/features/login/data/repos/login_repo.dart';
+
 import 'package:doctors/features/singup/data/models/sing_up_request_body.dart';
 import 'package:doctors/features/singup/logic/sign_up_state.dart';
 import 'package:flutter/material.dart';
