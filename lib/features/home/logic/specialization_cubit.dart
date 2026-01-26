@@ -12,11 +12,11 @@ class SpecializationCubit extends Cubit<SpecializationState> {
   Future<void> getSpecialization() async {
     emit(const SpecializationState.loading());
     var response = await _homeRepo.getSpecialization();
-    response.when(success: (data) {
-      emit(SpecializationState.success());
-    }, failure: (error) {
+    response.when(success: (specializationsResponseMode) {
+      emit(SpecializationState.success(specializationsResponseMode));
+    }, failure: (errorHandler) {
       emit(SpecializationState.failure(
-          error: error.apiErrorModel.message ?? "Something went wrong"));
+          error: errorHandler ));
     });
 
 

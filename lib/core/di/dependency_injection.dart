@@ -1,5 +1,7 @@
 import 'package:dio/dio.dart';
 import 'package:doctors/core/networking/api_services.dart';
+import 'package:doctors/features/home/data/api/home_api_services.dart';
+import 'package:doctors/features/home/data/repos/home_repo.dart';
 import 'package:doctors/features/login/data/repos/login_repo.dart';
 import 'package:doctors/features/login/logic/login_cubit.dart';
 import 'package:get_it/get_it.dart';
@@ -19,7 +21,8 @@ getIt.registerLazySingleton<LoginCubit>(()=>LoginCubit(getIt.get()));
 //signUp
   getIt.registerLazySingleton<SignUpRepo>(()=>SignUpRepo(getIt.get()));
   getIt.registerLazySingleton<SignUpCubit>(()=>SignUpCubit(getIt.get()));
-
+  getIt.registerLazySingleton<HomeApiServices>(()=>HomeApiServices(dio));
+  getIt.registerLazySingleton<HomeRepo>(()=>HomeRepo(getIt.get()));
 
 
 }
