@@ -1,4 +1,5 @@
 
+import 'package:doctors/core/helpers/shared_pref_constans.dart';
 import 'package:doctors/core/routing/app_routes.dart';
 import 'package:doctors/core/routing/routes.dart';
 import 'package:doctors/core/theming/colors.dart';
@@ -25,7 +26,7 @@ class DocDoc extends StatelessWidget {
         ),
        
         onGenerateRoute: appRoutes.generateRoute,
-       initialRoute: Routes.onBoardingScreen,
+       initialRoute:isLogin ? Routes.homeScreen : Routes.loginScreen,
        
       );
     },
